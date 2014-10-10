@@ -17,7 +17,6 @@
   </properties>
 
   <dependencies>
-
     <!-- Application dependencies-->
     <dependency>
       <groupId>org.juzu</groupId>
@@ -28,6 +27,11 @@
       <groupId>org.juzu</groupId>
       <artifactId>juzu-plugins-servlet</artifactId>
       <version>1.0.0-cr1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-plugins-less4j</artifactId>
+        <version>1.0.0-cr1</version>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.kernel</groupId>
@@ -122,6 +126,5 @@
      </plugin>
    </plugins>
   </build>
-
 
 </project>
