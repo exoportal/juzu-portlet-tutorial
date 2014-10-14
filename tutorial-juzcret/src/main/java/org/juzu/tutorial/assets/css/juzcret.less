@@ -39,6 +39,10 @@
 //=======================================
 .secret-wall-container {
 	padding: 20px 30px;
+	.btn-primary {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 }
 .secret-wall-container, .secret-wall-container * {
 	-webkit-box-sizing: border-box;
@@ -221,11 +225,23 @@
 		}
 	}
 }
-.dropdown.share-secret-dropdown {
-	.btn-primary {
-		padding-right: 20px;
-		padding-left: 20px;
+.share-secret-form {
+	.form-title {
+		margin: 0 0 10px;
+		text-shadow: none;
 	}
+	textarea {
+		min-width: 271px;
+		max-width: 271px;
+		max-height: 300px;
+		margin-bottom: 10px;
+		min-height: 80px;
+	}
+	textarea, input {
+		margin-bottom: 5px;
+	}
+}
+.dropdown.share-secret-dropdown {
 	.dropdown-menu {
 		left: auto;
 		margin-top: 20px;
@@ -249,21 +265,19 @@
 			right: 46px;
 		}
 	}
+	.share-secret-form {
+		padding: 20px 30px;
+	}
 }
-.share-secret-form {
-	padding: 20px 30px;
-	.form-title {
-		margin: 0 0 10px;
-		text-shadow: none;
+
+.share-secret-box {
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+	.title {
+		text-align: center;
 	}
-	textarea {
-		min-width: 271px;
-		max-width: 271px;
-		max-height: 300px;
-		margin-bottom: 10px;
-		min-height: 80px;
-	}
-	textarea, input {
-		margin-bottom: 5px;
+	.btn {
+		min-width: 78px;
 	}
 }
