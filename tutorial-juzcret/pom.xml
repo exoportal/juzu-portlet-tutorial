@@ -10,38 +10,34 @@
 
     <name>Juzu Application</name>
 
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
-
     <dependencies>
 
         <!-- Application dependencies-->
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-core</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-plugins-servlet</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-plugins-validation</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-plugins-less4j</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-plugins-webjars</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -63,9 +59,11 @@
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-plugins-portlet</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
-        <dependency>
+      <!--
+      <dependency>
             <groupId>org.exoplatform.kernel</groupId>
             <artifactId>exo.kernel.container</artifactId>
             <version>2.4.x-SNAPSHOT</version>
@@ -77,6 +75,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        -->
         <dependency>
           <groupId>org.exoplatform.jcr</groupId>
           <artifactId>exo.jcr.component.ext</artifactId>
@@ -128,7 +127,7 @@
         <dependency>
           <groupId>org.juzu</groupId>
           <artifactId>juzu-core</artifactId>
-          <version>1.0.0-cr1</version>
+          <version>1.0.x-SNAPSHOT</version>
           <type>test-jar</type>
           <scope>test</scope>
         </dependency>
@@ -141,13 +140,13 @@
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-depchain-arquillian</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.juzu</groupId>
             <artifactId>juzu-depchain-arquillian-tomcat7</artifactId>
-            <version>1.0.0-cr1</version>
+            <version>1.0.x-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
